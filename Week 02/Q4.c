@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 // Author: Sharwan Jung Kunwar
-// Purpose: To find the least number that must be added to x to make it exactly divisible by y
+// Purpose: To find the least number that must be subtracted from x to make it exactly divisible by y
 
 int main() {
-    int x, y, rem, toAdd;
+    int x, y, rem, toSub;
 
     // Take input from user
     printf("Enter the value of X: ");
@@ -19,14 +19,15 @@ int main() {
         return 1;
     }
 
+    // Compute remainder
     rem = x % y;
 
     if (rem == 0) {
-        toAdd = 0;
-        printf("No need to add anything.\n"); 
+        toSub = 0;
+        printf("No need to subtract anything.\n"); 
     } else {
-        toAdd = y - rem;
-        printf("The least number to be added to %d to make it divisible by %d is: %d\n", x, y, toAdd);
+        toSub = rem;
+        printf("The least number to be subtracted from %d to make it divisible by %d is: %d\n", x, y, toSub);
     }
 
     return 0;
