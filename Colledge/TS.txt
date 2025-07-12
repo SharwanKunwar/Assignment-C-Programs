@@ -1,0 +1,3 @@
+file handling using structurre.
+
+write a program to stroe the information of 10 students having the marks of english math, cfa, dl, sot, and their total in a file.

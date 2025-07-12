@@ -6,22 +6,19 @@
 
 FILE *fp;
 int main(){
-
     char ch;
 
-    fp = fopen("student.txt","r");
+    
 
+    fp= fopen("Box.txt","r");
     if(fp == NULL){
-        printf("Error opening file!\n");
-    }
-    else{
-        
+        printf("This file is exist\n");
+    }else{
         while((ch=fgetc(fp)) != EOF){
             printf("%c",ch);
         }
     }
-
-        fclose(fp);
+    
 
     return 0;
 
