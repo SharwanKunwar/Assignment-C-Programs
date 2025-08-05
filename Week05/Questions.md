@@ -100,15 +100,87 @@ int main() {
 
 ## 4.	Write a C program to find the GCD of two given numbers.
 ```c
-solution
+#include <stdio.h>
+
+int main() {
+    int num1, num2, temp;
+
+    // Input from user
+    printf("Enter two integers: ");
+    scanf("%d %d", &num1, &num2);
+
+    int a = num1;
+    int b = num2;
+
+    // Euclidean algorithm
+    while (b != 0) {
+        temp = b;
+        b = a % b;
+        a = temp;
+    }
+
+    printf("GCD of %d and %d is %d\n", num1, num2, a);
+
+    return 0;
+}
+
 ```
 ## 5.	Write a C program to check whether given number is Armstrong or not
 ```c
-solution
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int num, originalNum, remainder, result = 0, n = 0;
+
+    // Input from user
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+
+    originalNum = num;
+
+    // Count number of digits
+    while (originalNum != 0) {
+        originalNum /= 10;
+        n++;
+    }
+
+    originalNum = num;
+
+    // Calculate sum of nth powers of digits
+    while (originalNum != 0) {
+        remainder = originalNum % 10;
+        result += pow(remainder, n);
+        originalNum /= 10;
+    }
+
+    // Check if number is Armstrong
+    if (result == num)
+        printf("%d is an Armstrong number.\n", num);
+    else
+        printf("%d is not an Armstrong number.\n", num);
+
+    return 0;
+}
+
 ```
 ## 6.	Write a C program to print the characters from A to Z using loop.
 ```c
-solution
+#include <stdio.h>
+
+int main() {
+    char ch;
+
+    printf("Alphabets from A to Z:\n");
+
+    for (ch = 'A'; ch <= 'Z'; ch++) {
+        printf("%c ", ch);
+    }
+
+    printf("\n");
+    return 0;
+}
+
 ```
 
 <br>
