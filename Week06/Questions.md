@@ -23,10 +23,14 @@ int main() {
 ```
 
 ## 2.	Write a C program to generate Pascal's triangle
-                        1 
-					1		1
-				1		2		1
-			1		3		3		1
+
+```md
+        1
+      1   1
+    1   2   1
+  1   3   3   1
+1   4   6   4   1
+```
 
 ```c
 #include <stdio.h>
@@ -116,9 +120,11 @@ int main() {
 ```
 
 ## 4.	Write a C program to generate pyramid of numbers.
-                    1
-				1	3	1
-			1	3	5	3	1
+```md
+    1 
+  1 3 1 
+1 3 5 3 1 
+```
 
 ```c
 #include <stdio.h>
@@ -187,10 +193,12 @@ int main() {
 ```
 
 ## 6.	Write a C program to generate pyramid of numbers.
-                    1
-					1	2	
-					1	2	3	
-					1	2	3	4
+```md
+1
+1	2	
+1	2	3	
+1	2	3	4
+```
 
 ```c
 #include <stdio.h>
@@ -255,12 +263,13 @@ int main() {
 ```
 
 ## 8.	Write a C program to generate pattern.
-
+```md
               1
             2 3 2
           3 4 5 4 3
          4 5 6 7 6 5 4
         5 6 7 8 9 8 7 6 5
+```
 
 ```c
 #include <stdio.h>
@@ -326,11 +335,12 @@ int main() {
 
 ```
 ## 10.	Write a C program to generate pattern
-
+```md
        *
       *A*
      *A*A*
     *A*A*A*
+```
 
 ```c
 #include <stdio.h>
